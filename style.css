@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.nav-container{
+    background-image: linear-gradient(45deg,rgb(4, 0, 255),rgb(255, 0, 76));
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+body{
+    background-color: rgb(228, 228, 255);
+}
+h3{
+    line-height: 2.5;
+    font-size: 1.5rem;
+}
+textarea{
+    border: none;
+    border-radius: 20px;
+    background-color: transparent;
+    box-shadow: 1px 1px 9px -1px;
+    font-size:15px;
+    padding: 10px;
+}
+
+
+button{
+    margin: 10px 0;
+    padding: 1rem 8rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(45deg,rgb(4, 0, 255),rgb(255, 0, 76));
+    color: white;
+}
+button:hover{
+    background-image: linear-gradient(45deg,rgba(4, 0, 255, 0.503),rgba(255, 0, 76, 0.484));
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    padding: 0.5rem;
+    background-color: rgb(30, 30, 30);
+    width: 100%;
+    color: rgb(233, 225, 225);
+    letter-spacing: 1px;
+}
