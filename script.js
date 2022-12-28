@@ -30,9 +30,9 @@ function Output(erp) {
         }
 
         // Show output on textarea with numbers
-        absent.value = absentNu;
+        absent.value = absentNu.join(' ');
         tta.innerHTML = "Absent Students : " + absentNu.length;
-        present.value = erp;
+        present.value = erp.join(' ');
         ttp.innerHTML = "Present Student : " + erp.length;
     }
 
