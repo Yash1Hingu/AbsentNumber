@@ -13,7 +13,7 @@ const date = new Date();
 dateshow.innerHTML = date;
 
 // show output on absent and present textarea
-function Output(erp) {
+function Output(erp,notinClass) {
 
     // if input textarea empty than no output and absent logic run
     if (input.value != "") {
@@ -23,6 +23,10 @@ function Output(erp) {
 
             // if erp containe particular number mins it is present 
             // and not to be required to add in absentNu
+            if(notinClass.includes(i) === true) {
+                continue;
+            }
+
             if (erp.includes(i) === false) {
                 // this function use for push element in absentNu array
                 absentNu.push(i);
@@ -42,7 +46,7 @@ function Output(erp) {
 // display on website
 btn.addEventListener("click", function () {
     let present = input.value.split("\n");
-
+    let notinClass = [133,158,160,172,183];
     // this logic convert array elemnts from string to number
     // and also check if number is 0 than it is removed
     for (var i = 0; i < present.length; i++) {
@@ -61,7 +65,7 @@ btn.addEventListener("click", function () {
     // assening order
     present.sort();
 
-    Output(present);
+    Output(present,notinClass);
 })
 
 // reset button
